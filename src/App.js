@@ -1,34 +1,24 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navi from './Components/Navigation';
+import About from './Page/About';
+import Registration from './Page/Registration';
+import Login from './Page/Login';
+import Home from './Page/Home';
+
 
 function App() {
   return (
-    <div className="login">
-
-        <h1 className="text-center">Hello Again!</h1>
-        
-        <form className="needs-validation">
-            <div className="form-group was-validated">
-                <label className="form-label" for="email">Email address</label>
-                <input className="form-control" type="email" id="email" required/>
-                <div className="invalid-feedback">
-                    Please enter your email address
-                </div>
-            </div>
-            <div className="form-group was-validated">
-                <label className="form-label" for="password">Password</label>
-                <input className="form-control" type="password" id="password" required/>
-                <div className="invalid-feedback">
-                    Please enter your password
-                </div>
-            </div>
-            <div className="form-group form-check">
-                <input className="form-check-input" type="checkbox" id="check"/>
-                <label className="form-check-label" for="check">Remember me</label>
-            </div>
-            <input className="btn btn-success w-100" type="submit" value="SIGN IN"/>
-        </form>
+    <div className="App">
+      <Navi/>
+      <Routes>
+        <Route path='/' element = {<Home/>} />
+        <Route path='/aboutUS' element = {<About/>} />
+        <Route path='/login' element = {<Login/>} />
+        <Route path='/registration' element = {<Registration/>} />
+      </Routes>
+      
     </div>
   );
 }

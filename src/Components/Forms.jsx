@@ -40,9 +40,10 @@ function BasicExample() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      <br />
       <center>
-      <h2>Inputted Email: {email}</h2>
-      <h2>Inputted Password: {password}</h2>
+      <h2>My Email: {email}</h2>
+      <h2>My Password: {password}</h2>
       </center>
     </Form>
   );

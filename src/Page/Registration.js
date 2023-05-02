@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 function Registration() {
   return (
     <div>
-        <h1>Registration</h1>
+        <center><h1>Registration</h1></center>
         <Form>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
@@ -46,7 +46,7 @@ function Registration() {
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridZip">
-                <Form.Label>Zip</Form.Label>
+                <Form.Label>Zip Code</Form.Label>
                 <Form.Control placeholder="ex. 6000" />
               </Form.Group>
             </Row>

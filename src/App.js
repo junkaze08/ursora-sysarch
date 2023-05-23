@@ -6,26 +6,8 @@ import About from './Page/About';
 import Registration from './Page/Registration';
 import Login from './Page/Login';
 import Home from './Page/Home';
-import React, { useState } from 'react';
-import Forms from './Components/Forms';
-
 
 function App() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleRegistrationSubmit = (event) => {
-    event.preventDefault();
-    // do something with email and password
-  };
   return (
     <div className="App">
       <Navi/>
@@ -37,6 +19,7 @@ function App() {
       </Routes>
       <div>
     </div>
+    
     </div>
   );
 }
